@@ -37,7 +37,7 @@ const NavigationMobile = ({ onNavLinkClick, isMarketplaceAppPage }: Props) => {
 
   const hasAccount = useHasAccount();
 
-  const iconColor = useColorModeValue('blue.600', 'blue.300');
+  const iconColor = useColorModeValue('green.600', 'green.300');
 
   const openedItem = mainNavItems[openedGroupIndex];
 

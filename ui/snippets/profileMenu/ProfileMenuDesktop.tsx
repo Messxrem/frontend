@@ -58,7 +58,7 @@ const ProfileMenuDesktop = ({ isHomePage, className, fallbackIconSize }: Props) 
   let iconButtonStyles: Partial<IconButtonProps> = {};
   if (hasMenu) {
     iconButtonStyles = {
-      bg: isHomePage ? 'blue.50' : themedBackground,
+      bg: isHomePage ? 'green.50' : themedBackground,
     };
   } else if (isHomePage) {
     iconButtonStyles = {
@@ -87,7 +87,7 @@ const ProfileMenuDesktop = ({ isHomePage, className, fallbackIconSize }: Props) 
               aria-label="profile menu"
               icon={ <UserAvatar size={ 20 } fallbackIconSize={ fallbackIconSize }/> }
               variant={ variant }
-              colorScheme="blue"
+              colorScheme="green"
               boxSize="40px"
               flexShrink={ 0 }
               { ...iconButtonProps }

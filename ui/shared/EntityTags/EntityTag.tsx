@@ -35,7 +35,7 @@ const EntityTag = ({ data, isLoading, truncate }: Props) => {
         maxW={ truncate ? { base: '125px', lg: '300px' } : undefined }
         bg={ data.meta?.bgColor }
         color={ data.meta?.textColor }
-        colorScheme={ hasLink ? 'gray-blue' : 'gray' }
+        colorScheme={ hasLink ? 'gray-green' : 'gray' }
         _hover={ hasLink ? { opacity: 0.76 } : undefined }
       >
         <EntityTagLink data={ data }>

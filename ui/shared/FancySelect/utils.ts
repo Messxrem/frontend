@@ -45,7 +45,7 @@ function getSingleValueStyles(size?: Size) {
 }
 
 const getChakraStyles: (colorMode: ColorMode) => ChakraStylesConfig<Option> = (colorMode) => {
-  const formColor = getFormStyles({ colorMode, colorScheme: 'blue', theme });
+  const formColor = getFormStyles({ colorMode, colorScheme: 'green', theme });
 
   return {
     control: (provided, state) => ({

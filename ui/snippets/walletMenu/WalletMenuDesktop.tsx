@@ -39,7 +39,7 @@ const WalletMenuDesktop = ({ isHomePage, className, size = 'md' }: Props) => {
     const backgroundColor = isAutoConnectDisabled ? themedBackgroundOrange : themedBackground;
     const color = isAutoConnectDisabled ? themedColorForOrangeBg : themedColor;
     buttonStyles = {
-      bg: isHomePage ? 'blue.50' : backgroundColor,
+      bg: isHomePage ? 'green.50' : backgroundColor,
       color: isHomePage ? 'blackAlpha.800' : color,
       _hover: {
         color: isHomePage ? 'blackAlpha.800' : color,
@@ -80,7 +80,7 @@ const WalletMenuDesktop = ({ isHomePage, className, size = 'md' }: Props) => {
             <Button
               className={ className }
               variant={ variant }
-              colorScheme="blue"
+              colorScheme="green"
               flexShrink={ 0 }
               isLoading={ (isModalOpening || isModalOpen) && !isWalletConnected }
               loadingText="Connect wallet"

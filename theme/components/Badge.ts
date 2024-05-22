@@ -17,7 +17,7 @@ const variantSubtle = defineStyle((props) => {
     };
   }
 
-  if (c === 'gray-blue') {
+  if (c === 'gray-green') {
     return {
       bg: mode('gray.100', 'gray.800')(props),
       color: mode('blackAlpha.800', 'whiteAlpha.800')(props),
