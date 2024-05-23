@@ -88,7 +88,7 @@ const SearchBarInput = (
       transitionDuration="normal"
       transitionTimingFunction="ease"
     >
-      <InputGroup size={{ base: 'sm', lg: isHomepage ? 'sm_md' : 'sm' }} backgroundColor={ bgColor } >
+      <InputGroup size={{ base: 'sm', lg: isHomepage ? 'sm_md' : 'sm' }} color={ bgColor } backgroundColor={ bgColor } >
         <InputLeftElement w={{ base: isHomepage ? 6 : 4, lg: 6 }} ml={{ base: isHomepage ? 4 : 3, lg: 4 }} h="100%">
           <IconSvg name="search" boxSize={{ base: isHomepage ? 6 : 4, lg: 6 }} color='#00E8AF'/>
         </InputLeftElement>
@@ -109,6 +109,7 @@ const SearchBarInput = (
           borderColor={ useColorModeValue('blackAlpha.100', 'whiteAlpha.200') }
           _focusWithin={{ _placeholder: { color: 'gray.300' } }}
           color={ bgColor }
+          backgroundColor={ bgColor }
           value={ value }
         />
         { value && (

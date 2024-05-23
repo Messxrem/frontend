@@ -195,6 +195,8 @@ const Footer = () => {
           "info links-bottom"
         `,
       }}
+      background='rgba(15, 23, 42, 0.34)'
+      backdropFilter= "blur(4px)"
     >
 
       { renderNetworkInfo({ lg: 'network' }) }
