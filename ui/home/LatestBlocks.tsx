@@ -108,7 +108,7 @@ const LatestBlocks = () => {
           </Text>
         </Skeleton>
       ) }
-      <Box mt={ 3 } bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)">
+      <Box mt={ 3 } >
         { content }
       </Box>
     </Box>

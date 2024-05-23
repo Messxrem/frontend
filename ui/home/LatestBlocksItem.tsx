@@ -34,6 +34,7 @@ const LatestBlocksItem = ({ block, isLoading }: Props) => {
       borderRadius="md"
       border="1px solid"
       borderColor="divider"
+      bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)"
       p={ 3 }
     >
       <Flex alignItems="center" overflow="hidden" w="100%" mb={ 3 }>
@@ -41,6 +42,7 @@ const LatestBlocksItem = ({ block, isLoading }: Props) => {
           isLoading={ isLoading }
           number={ block.height }
           tailLength={ 2 }
+          textColor="#00E8AF"
           fontSize="xl"
           lineHeight={ 7 }
           fontWeight={ 500 }
