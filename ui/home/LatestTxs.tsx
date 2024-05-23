@@ -44,7 +44,7 @@ const LatestTransactions = () => {
           ))) }
         </Box>
         <AddressHighlightProvider>
-          <Box bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)" mb={ 3 } display={{ base: 'none', lg: 'block' }}>
+          <Box bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)" border="1px solid" borderColor="divider" mb={ 3 } display={{ base: 'none', lg: 'block' }}>
             { data.slice(0, txsCount).map(((tx, index) => (
               <LatestTxsItem
                 key={ tx.hash + (isPlaceholderData ? index : '') }

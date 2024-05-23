@@ -23,7 +23,7 @@ const TxInternalsTable = ({ data, sort, onSortToggle, top, isLoading }: Props) =
 
   return (
     <AddressHighlightProvider>
-      <Table variant="simple" size="sm">
+      <Table bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)" variant="simple" size="sm">
         <Thead top={ top }>
           <Tr>
             <Th width="28%">Type</Th>

@@ -166,7 +166,7 @@ const AddressEntry = (props: EntityProps) => {
     >
       <Icon { ...partsProps } color="#00E8AF"/>
       <Link { ...linkProps }>
-        <Content { ...partsProps }/>
+        <Content color="#00E8AF" { ...partsProps }/>
       </Link>
       <Copy { ...partsProps }/>
     </Container>

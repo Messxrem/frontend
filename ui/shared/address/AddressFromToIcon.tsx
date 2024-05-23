@@ -43,6 +43,7 @@ const AddressFromToIcon = ({ isLoading, type, className }: Props) => {
       className={ className }
       isLoading={ isLoading }
       boxSize={ 5 }
+      bgColor='rgba(255,255,255,0)'
       flexShrink={ 0 }
       borderRadius="sm"
     />

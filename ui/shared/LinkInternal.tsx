@@ -11,12 +11,12 @@ const LinkInternal = ({ isLoading, ...props }: LinkProps & { isLoading?: boolean
   }
 
   if (!props.href) {
-    return <Link { ...props } ref={ ref }/>;
+    return <Link color="#00E8AF" { ...props } ref={ ref }/>;
   }
 
   return (
-    <NextLink href={ props.href as NextLinkProps['href'] } passHref target={ props.target } legacyBehavior>
-      <Link { ...props } ref={ ref }/>
+    <NextLink color="#00E8AF" href={ props.href as NextLinkProps['href'] } passHref target={ props.target } legacyBehavior>
+      <Link color="#00E8AF" { ...props } ref={ ref }/>
     </NextLink>
   );
 };

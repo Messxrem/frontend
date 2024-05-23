@@ -40,7 +40,7 @@ const TheadSticky = ({ top, children, ...restProps }: Props) => {
   };
 
   return (
-    <Thead { ...props } ref={ ref }>
+    <Thead bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)" { ...props } ref={ ref }>
       { children }
     </Thead>
   );
