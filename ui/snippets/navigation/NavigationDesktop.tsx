@@ -39,8 +39,8 @@ const NavigationDesktop = () => {
   }, [ isCollapsed ]);
 
   const chevronIconStyles = {
-    bgColor: useColorModeValue('white', 'black'),
-    color: useColorModeValue('blackAlpha.400', 'whiteAlpha.400'),
+    bgColor: "#103339",
+    color: "#00E8AF",
     borderColor: 'divider',
   };
 

@@ -32,7 +32,8 @@ const StatsItem = ({ icon, title, value, className, tooltip, url, isLoading }: P
 
   return (
     <Flex
-      backgroundColor={ isLoading ? loadingBgColor : bgColor }
+      backgroundColor="rgba(15, 23, 42, 0.34)" 
+      backdropFilter="blur(4px)"
       padding={ 3 }
       borderRadius="md"
       flexDirection="row"
@@ -48,7 +49,7 @@ const StatsItem = ({ icon, title, value, className, tooltip, url, isLoading }: P
         href: url,
       } : {}) }
     >
-      <IconSvg name={ icon } boxSize={ 7 } isLoading={ isLoading } borderRadius="base"/>
+      <IconSvg color="#00E8AF" name={ icon } boxSize={ 7 } isLoading={ isLoading } borderRadius="base"/>
       <Flex
         flexDirection="column"
         alignItems="start"
