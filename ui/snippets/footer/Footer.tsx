@@ -31,47 +31,47 @@ const Footer = () => {
   const apiVersionUrl = getApiVersionUrl(backendVersionData?.backend_version);
   const issueUrl = useIssueUrl(backendVersionData?.backend_version);
   const BLOCKSCOUT_LINKS = [
-    {
-      icon: 'edit' as const,
-      iconSize: '16px',
-      text: 'Submit an issue',
-      url: issueUrl,
-    },
-    {
-      icon: 'social/canny' as const,
-      iconSize: '20px',
-      text: 'Feature request',
-      url: 'https://blockscout.canny.io/feature-requests',
-    },
-    {
-      icon: 'social/git' as const,
-      iconSize: '18px',
-      text: 'Contribute',
-      url: 'https://github.com/blockscout/blockscout',
-    },
+    // {
+    //   icon: 'edit' as const,
+    //   iconSize: '16px',
+    //   text: 'Submit an issue',
+    //   url: issueUrl,
+    // },
+    // {
+    //   icon: 'social/canny' as const,
+    //   iconSize: '20px',
+    //   text: 'Feature request',
+    //   url: 'https://blockscout.canny.io/feature-requests',
+    // },
+    // {
+    //   icon: 'social/git' as const,
+    //   iconSize: '18px',
+    //   text: 'Contribute',
+    //   url: 'https://github.com/blockscout/blockscout',
+    // },
     {
       icon: 'social/twitter' as const,
       iconSize: '18px',
       text: 'X (ex-Twitter)',
-      url: 'https://www.twitter.com/blockscoutcom',
+      url: 'https://twitter.com/DexNet_one',
     },
     {
-      icon: 'social/discord' as const,
+      icon: 'social/telegram_filled' as const,
       iconSize: '24px',
-      text: 'Discord',
-      url: 'https://discord.gg/blockscout',
+      text: 'Telegram',
+      url: 'https://t.me/dexnet',
     },
     {
-      icon: 'discussions' as const,
+      icon: 'social/facebook_filled' as const,
       iconSize: '20px',
-      text: 'Discussions',
-      url: 'https://github.com/orgs/blockscout/discussions',
+      text: 'Facebook',
+      url: 'https://www.facebook.com/profile.php?id=100094044572486',
     },
     {
-      icon: 'donate' as const,
+      icon: 'social/linkedin_filled' as const,
       iconSize: '20px',
-      text: 'Donate',
-      url: 'https://github.com/sponsors/blockscout',
+      text: 'Linkedin',
+      url: 'https://www.linkedin.com/company/dexnetone',
     },
   ];
 
@@ -118,9 +118,9 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={ gridArea }>
-        <Link fontSize="xs" href="https://www.blockscout.com">blockscout.com</Link>
+        <Link fontSize="xs" href="https://dexnet.one/">dexnet.one</Link>
         <Text mt={ 3 } fontSize="xs">
-          Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.
+        Dexnet explorer is a tool for inspecting and analyzing Dexnet chain.
         </Text>
         <VStack spacing={ 1 } mt={ 6 } alignItems="start">
           { apiVersionUrl && (

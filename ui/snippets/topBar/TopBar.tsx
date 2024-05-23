@@ -10,17 +10,17 @@ import TopBarStats from './TopBarStats';
 const feature = config.features.swapButton;
 
 const TopBar = () => {
-  const bgColor = useColorModeValue('gray.50', 'whiteAlpha.100');
+  const bgColor = 'rgba(0, 0, 0, 0)';
 
   return (
     <Flex
-      py={ 2 }
-      px={{ base: 3, lg: 6 }}
+      py={ 0 }
+      px={{ base: 0, lg: 0 }}
       bgColor={ bgColor }
       justifyContent="space-between"
       alignItems="center"
     >
-      <TopBarStats/>
+      {/* <TopBarStats/>
       <Flex alignItems="center">
         { feature.isEnabled && (
           <>
@@ -29,7 +29,7 @@ const TopBar = () => {
           </>
         ) }
         <Settings/>
-      </Flex>
+      </Flex> */}
     </Flex>
   );
 };

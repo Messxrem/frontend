@@ -24,7 +24,7 @@ const PageNextJs = <Pathname extends Route['pathname']>(props: Props<Pathname>) 
   const { title, description, opengraph } = metadata.generate(props, props.apiData);
 
   useGetCsrfToken();
-  useAdblockDetect();
+  // useAdblockDetect();
 
   const isMixpanelInited = mixpanel.useInit();
   mixpanel.useLogPageView(isMixpanelInited);

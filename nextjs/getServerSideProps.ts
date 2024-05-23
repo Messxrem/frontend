@@ -23,15 +23,15 @@ export interface Props<Pathname extends Route['pathname'] = never> {
 export const base = async <Pathname extends Route['pathname'] = never>({ req, query }: GetServerSidePropsContext):
 Promise<GetServerSidePropsResult<Props<Pathname>>> => {
   const adBannerProvider = (() => {
-    if (adBannerFeature.isEnabled) {
-      if ('additionalProvider' in adBannerFeature && adBannerFeature.additionalProvider) {
-        // we need to get a random ad provider on the server side to keep it consistent with the client side
-        const randomIndex = Math.round(Math.random());
-        return [ adBannerFeature.provider, adBannerFeature.additionalProvider ][randomIndex];
-      } else {
-        return adBannerFeature.provider;
-      }
-    }
+    // if (adBannerFeature.isEnabled) {
+    //   if ('additionalProvider' in adBannerFeature && adBannerFeature.additionalProvider) {
+    //     // we need to get a random ad provider on the server side to keep it consistent with the client side
+    //     const randomIndex = Math.round(Math.random());
+    //     return [ adBannerFeature.provider, adBannerFeature.additionalProvider ][randomIndex];
+    //   } else {
+    //     return adBannerFeature.provider;
+    //   }
+    // }
     return null;
   })();
 

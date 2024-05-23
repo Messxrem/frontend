@@ -13,10 +13,6 @@ declare global {
     ga?: {
       getAll: () => Array<{ get: (prop: string) => string }>;
     };
-    AdButler: {
-      ads: Array<unknown>;
-      register: (...args: unknown) => void;
-    };
     abkw: string;
     __envs: Record<string, string>;
   }

@@ -63,8 +63,10 @@ const NavigationDesktop = () => {
           display: 'block',
         },
       }}
+      background='rgba(15, 23, 42, 0.34)'
+      backdropFilter="blur(4px)"
     >
-      { config.chain.isTestnet && <IconSvg name="testnet" h="14px" w="49px" color="red.400" position="absolute" pl={ 3 } top="34px"/> }
+      {/* { config.chain.isTestnet && <IconSvg name="testnet" h="14px" w="49px" color="red.400" position="absolute" pl={ 3 } top="34px"/> } */}
       <Box
         as="header"
         display="flex"

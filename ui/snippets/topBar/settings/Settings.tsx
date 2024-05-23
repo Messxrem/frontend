@@ -11,7 +11,7 @@ const Settings = () => {
 
   return (
     <Popover placement="bottom-start" trigger="click" isOpen={ isOpen } onClose={ onClose }>
-      <PopoverTrigger>
+      {/* <PopoverTrigger>
         <IconButton
           variant="simple"
           colorScheme="green"
@@ -28,7 +28,7 @@ const Settings = () => {
           <Box borderColor="divider" borderWidth="1px" my={ 3 }/>
           <SettingsIdentIcon/>
         </PopoverBody>
-      </PopoverContent>
+      </PopoverContent> */}
     </Popover>
   );
 };

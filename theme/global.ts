@@ -7,7 +7,10 @@ import getDefaultTransitionProps from './utils/getDefaultTransitionProps';
 
 const global = (props: StyleFunctionProps) => ({
   body: {
-    bg: mode('white', 'black')(props),
+    bgImage: 'url("bg.png")', // Установите путь к вашему изображению
+    bgSize: "cover",
+    bgRepeat: "no-repeat",
+    bgPosition: "center center",
     ...getDefaultTransitionProps(),
     '-webkit-tap-highlight-color': 'transparent',
     'font-variant-ligatures': 'no-contextual',

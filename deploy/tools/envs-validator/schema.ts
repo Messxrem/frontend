@@ -636,7 +636,7 @@ const schema = yup
     NEXT_PUBLIC_USE_NEXT_JS_PROXY: yup.boolean(),
   })
   .concat(accountSchema)
-  .concat(adsBannerSchema)
+  // .concat(adsBannerSchema)
   .concat(marketplaceSchema)
   .concat(rollupSchema)
   .concat(beaconChainSchema)

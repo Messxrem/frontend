@@ -30,7 +30,7 @@ const defaultColorTheme = (() => {
 })();
 
 // eslint-disable-next-line max-len
-const HOMEPAGE_PLATE_BACKGROUND_DEFAULT = 'radial-gradient(103.03% 103.03% at 0% 0%, rgba(183, 148, 244, 0.8) 0%, rgba(0, 163, 196, 0.8) 100%), var(--chakra-colors-green-400)';
+const HOMEPAGE_PLATE_BACKGROUND_DEFAULT = 'rgba(15, 23, 42, 0.34)';
 
 const UI = Object.freeze({
   sidebar: {
@@ -45,6 +45,9 @@ const UI = Object.freeze({
     hiddenLinks,
     otherLinks: parseEnvJson<Array<NavItemExternal>>(getEnvValue('NEXT_PUBLIC_OTHER_LINKS')) || [],
     featuredNetworks: getExternalAssetFilePath('NEXT_PUBLIC_FEATURED_NETWORKS'),
+    plate: {
+      background: 'rgba(15, 23, 42, 0.34)',
+    }
   },
   footer: {
     links: getExternalAssetFilePath('NEXT_PUBLIC_FOOTER_LINKS'),
@@ -54,8 +57,10 @@ const UI = Object.freeze({
   homepage: {
     charts: parseEnvJson<Array<ChainIndicatorId>>(getEnvValue('NEXT_PUBLIC_HOMEPAGE_CHARTS')) || [],
     plate: {
-      background: getEnvValue('NEXT_PUBLIC_HOMEPAGE_PLATE_BACKGROUND') || HOMEPAGE_PLATE_BACKGROUND_DEFAULT,
-      textColor: getEnvValue('NEXT_PUBLIC_HOMEPAGE_PLATE_TEXT_COLOR') || 'white',
+      background: HOMEPAGE_PLATE_BACKGROUND_DEFAULT,
+      textColor: 'white',
+      // border: '1px solid white',
+      // boxShadow: '4px 4px 4px rgba(0, 0, 0, 0.25)',
     },
     showAvgBlockTime: getEnvValue('NEXT_PUBLIC_HOMEPAGE_SHOW_AVG_BLOCK_TIME') === 'false' ? false : true,
   },
