@@ -40,7 +40,7 @@ const Sort = <Sort extends string>({ sort, setSort, options, isLoading }: Props<
           isLoading={ isLoading }
         />
       </MenuButton>
-      <MenuList minWidth="240px" zIndex="popover">
+      <MenuList minWidth="240px" zIndex="9999">
         <MenuOptionGroup value={ sort } title="Sort by" type="radio" onChange={ setSortingFromMenu }>
           { options.map((option) => (
             <MenuItemOption

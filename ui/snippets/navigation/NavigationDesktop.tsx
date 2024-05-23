@@ -65,6 +65,7 @@ const NavigationDesktop = () => {
       }}
       background='rgba(15, 23, 42, 0.34)'
       backdropFilter="blur(4px)"
+      zIndex="9999"
     >
       {/* { config.chain.isTestnet && <IconSvg name="testnet" h="14px" w="49px" color="red.400" position="absolute" pl={ 3 } top="34px"/> } */}
       <Box
@@ -80,7 +81,7 @@ const NavigationDesktop = () => {
         transitionProperty="padding"
         transitionDuration="normal"
         transitionTimingFunction="ease"
-        zIndex={9999}
+        zIndex="9999"
       >
         <NetworkLogo isCollapsed={ isCollapsed }/>
         { Boolean(config.UI.sidebar.featuredNetworks) && <NetworkMenu isCollapsed={ isCollapsed }/> }
