@@ -118,19 +118,19 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={ gridArea }>
-        <Link fontSize="xs" href="https://dexnet.one/">dexnet.one</Link>
+        <Link color="#00E8AF" fontSize="xs" href="https://dexnet.one/">dexnet.one</Link>
         <Text mt={ 3 } fontSize="xs">
         Dexnet explorer is a tool for inspecting and analyzing Dexnet chain.
         </Text>
         <VStack spacing={ 1 } mt={ 6 } alignItems="start">
           { apiVersionUrl && (
             <Text fontSize="xs">
-              Backend: <Link href={ apiVersionUrl } target="_blank">{ backendVersionData?.backend_version }</Link>
+              {/* Backend: <Link href={ apiVersionUrl } target="_blank">{ backendVersionData?.backend_version }</Link> */}
             </Text>
           ) }
           { frontendLink && (
             <Text fontSize="xs">
-              Frontend: { frontendLink }
+              {/* Frontend: { frontendLink } */}
             </Text>
           ) }
         </VStack>

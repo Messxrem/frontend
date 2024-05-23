@@ -32,7 +32,7 @@ const Home = () => {
             fontSize={{ base: '18px', lg: '40px' }}
             lineHeight={{ base: '24px', lg: '48px' }}
             fontWeight={ 600 }
-            color='rgba(32, 81, 92, 0.34)'
+            backgroundColor='rgba(32, 81, 92, 0.34)'
             backdropFilter="blur(4px)"
           >
             { config.chain.name } explorer
