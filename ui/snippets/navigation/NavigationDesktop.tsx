@@ -97,7 +97,7 @@ const NavigationDesktop = () => {
       </Box>
       { hasAccount && (
         <Box as="nav" borderTopWidth="1px" borderColor="divider" w="100%" mt={ 3 } pt={ 3 } bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)">
-          <VStack as="ul" spacing="1" alignItems="flex-start">
+          <VStack as="ul" spacing="1" zIndex={9999} alignItems="flex-start">
             { accountNavItems.map((item) => <NavLink key={ item.text } item={ item } isCollapsed={ isCollapsed }/>) }
           </VStack>
         </Box>
