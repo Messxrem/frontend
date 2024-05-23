@@ -47,6 +47,7 @@ const UI = Object.freeze({
     featuredNetworks: getExternalAssetFilePath('NEXT_PUBLIC_FEATURED_NETWORKS'),
     plate: {
       background: 'rgba(15, 23, 42, 0.34)',
+      
     }
   },
   footer: {
@@ -54,13 +55,18 @@ const UI = Object.freeze({
     frontendVersion: getEnvValue('NEXT_PUBLIC_GIT_TAG'),
     frontendCommit: getEnvValue('NEXT_PUBLIC_GIT_COMMIT_SHA'),
     backdropFilter: "blur(4px)",
-    background: 'rgba(15, 23, 42, 0.34)',
+    plate: {
+      background: 'rgba(15, 23, 42, 0.34)',
+      backdropFilter: "blur(4px)",
+    }
+    
   },
   homepage: {
     charts: parseEnvJson<Array<ChainIndicatorId>>(getEnvValue('NEXT_PUBLIC_HOMEPAGE_CHARTS')) || [],
     plate: {
       background: HOMEPAGE_PLATE_BACKGROUND_DEFAULT,
       textColor: 'white',
+      
       // border: '1px solid white',
       // boxShadow: '4px 4px 4px rgba(0, 0, 0, 0.25)',
     },
@@ -88,6 +94,7 @@ const UI = Object.freeze({
   colorTheme: {
     'default': defaultColorTheme,
   },
+  
 });
 
 export default UI;

@@ -150,7 +150,7 @@ const Footer = () => {
 
   if (config.UI.footer.links) {
     return (
-      <Grid { ...containerProps }>
+      <Grid { ...containerProps } backdropFilter="blur(4px)" bg="rgba(15, 23, 42, 0.34)">
         <div>
           { renderNetworkInfo() }
           { renderProjectInfo() }

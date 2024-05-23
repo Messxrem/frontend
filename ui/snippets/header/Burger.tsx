@@ -29,12 +29,12 @@ const Burger = ({ isMarketplaceAppPage }: Props) => {
 
   return (
     <>
-      <Box padding={ 2 } onClick={ onOpen } cursor="pointer">
+      <Box padding={ 2 } onClick={ onOpen } cursor="pointer" bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)">
         <IconSvg
           name="burger"
           boxSize={ 6 }
           display="block"
-          color={ iconColor }
+          color="#00E8AF"
           aria-label="Menu button"
         />
       </Box>
@@ -43,12 +43,13 @@ const Burger = ({ isMarketplaceAppPage }: Props) => {
         placement="left"
         onClose={ onClose }
         autoFocus={ false }
+        
       >
         <DrawerOverlay/>
         <DrawerContent maxWidth="330px">
           <DrawerBody p={ 6 } display="flex" flexDirection="column">
-            { config.chain.isTestnet && <IconSvg name="testnet" h="14px" w="37px" color="red.400" alignSelf="flex-start"/> }
-            <Flex alignItems="center" justifyContent="space-between">
+            {/* { config.chain.isTestnet && <IconSvg name="testnet" h="14px" w="37px" color="red.400" alignSelf="flex-start"/> } */}
+            <Flex alignItems="center" justifyContent="space-between" bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)">
               <NetworkLogo onClick={ handleNetworkLogoClick }/>
               { config.UI.sidebar.featuredNetworks ? (
                 <NetworkMenuButton

@@ -85,7 +85,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "beaker"
             },
             "runOptions": {
@@ -106,7 +106,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "beaker"
             },
             "runOptions": {
@@ -127,7 +127,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "beaker"
             },
             "runOptions": {
@@ -148,7 +148,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "output"
             },
             "runOptions": {
@@ -169,7 +169,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "diff"
             },
             "runOptions": {
@@ -192,7 +192,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "beaker"
             },
             "runOptions": {
@@ -213,7 +213,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "beaker"
             },
             "runOptions": {
@@ -234,7 +234,7 @@
                 "revealProblems": "onProblem",
             },
             "icon": {
-                "color": "terminal.ansiBlue",
+                "color": "#00E8AF",
                 "id": "beaker"
             },
             "runOptions": {
