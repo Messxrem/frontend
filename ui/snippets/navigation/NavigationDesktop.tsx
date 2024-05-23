@@ -80,12 +80,13 @@ const NavigationDesktop = () => {
         transitionProperty="padding"
         transitionDuration="normal"
         transitionTimingFunction="ease"
+        zIndex={9999}
       >
         <NetworkLogo isCollapsed={ isCollapsed }/>
         { Boolean(config.UI.sidebar.featuredNetworks) && <NetworkMenu isCollapsed={ isCollapsed }/> }
       </Box>
       <Box as="nav" mt={ 6 } w="100%">
-        <VStack as="ul" spacing="1" alignItems="flex-start">
+        <VStack zIndex={9999} as="ul" spacing="1" alignItems="flex-start">
           { mainNavItems.map((item) => {
             if (isGroupItem(item)) {
               return <NavLinkGroupDesktop key={ item.text } item={ item } isCollapsed={ isCollapsed }/>;
