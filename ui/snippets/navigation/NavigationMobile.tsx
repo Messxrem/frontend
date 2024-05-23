@@ -117,11 +117,8 @@ const NavigationMobile = ({ onNavLinkClick, isMarketplaceAppPage }: Props) => {
                     borderBottomWidth: '1px',
                     borderColor: 'divider',
                   }}
-                  bgColor="rgba(15, 23, 42, 0.34)"
-                  backdropFilter="blur(4px)"
-                  zIndex={9999} 
                 >
-                  { item.map(subItem => <NavLink key={ subItem.text } item={ subItem } onClick={ onNavLinkClick } isCollapsed={ isCollapsed }/>) }
+                  { item.map(subItem => <NavLink zIndex={9999} key={ subItem.text } item={ subItem } onClick={ onNavLinkClick } isCollapsed={ isCollapsed }/>) }
                 </Box>
               ) :
                 <NavLink key={ item.text } item={ item } mb={ 1 } onClick={ onNavLinkClick } isCollapsed={ isCollapsed }/>,

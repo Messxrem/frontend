@@ -25,6 +25,7 @@ const Home = () => {
         py={{ base: 3, lg: 8 }}
         minW={{ base: 'unset', lg: '900px' }}
         data-label="hero plate"
+        backdropFilter="blur(4px)"
       >
         <Flex mb={{ base: 2, lg: 6 }} justifyContent="space-between" alignItems="center">
           <Box
@@ -32,8 +33,8 @@ const Home = () => {
             fontSize={{ base: '18px', lg: '40px' }}
             lineHeight={{ base: '24px', lg: '48px' }}
             fontWeight={ 600 }
-            backgroundColor='rgba(32, 81, 92, 0.34)'
-            backdropFilter="blur(4px)"
+            // backgroundColor='rgba(32, 81, 92, 0.34)'
+            // backdropFilter="blur(4px)"
           >
             { config.chain.name } explorer
           </Box>

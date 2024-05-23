@@ -84,7 +84,7 @@ const NavigationDesktop = () => {
         <NetworkLogo isCollapsed={ isCollapsed }/>
         { Boolean(config.UI.sidebar.featuredNetworks) && <NetworkMenu isCollapsed={ isCollapsed }/> }
       </Box>
-      <Box as="nav" mt={ 6 } w="100%" bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)">
+      <Box as="nav" mt={ 6 } w="100%">
         <VStack as="ul" spacing="1" alignItems="flex-start">
           { mainNavItems.map((item) => {
             if (isGroupItem(item)) {
