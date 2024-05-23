@@ -30,7 +30,7 @@ const defaultColorTheme = (() => {
 })();
 
 // eslint-disable-next-line max-len
-const HOMEPAGE_PLATE_BACKGROUND_DEFAULT = 'rgba(15, 23, 42, 0.34)';
+const HOMEPAGE_PLATE_BACKGROUND_DEFAULT = 'rgba(32, 81, 92, 0.34)';
 
 const UI = Object.freeze({
   sidebar: {
@@ -53,6 +53,8 @@ const UI = Object.freeze({
     links: getExternalAssetFilePath('NEXT_PUBLIC_FOOTER_LINKS'),
     frontendVersion: getEnvValue('NEXT_PUBLIC_GIT_TAG'),
     frontendCommit: getEnvValue('NEXT_PUBLIC_GIT_COMMIT_SHA'),
+    backdropFilter: "blur(4px)",
+    background: 'rgba(15, 23, 42, 0.34)',
   },
   homepage: {
     charts: parseEnvJson<Array<ChainIndicatorId>>(getEnvValue('NEXT_PUBLIC_HOMEPAGE_CHARTS')) || [],

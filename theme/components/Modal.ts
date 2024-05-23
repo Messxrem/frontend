@@ -42,6 +42,8 @@ const baseStyleBody = defineStyle({
 const baseStyleFooter = defineStyle({
   padding: 0,
   justifyContent: 'flex-start',
+  background: 'rgba(15, 23, 42, 0.34)',
+  backdropFilter: "blur(4px)" 
 });
 
 const baseStyleCloseButton = defineStyle((props) => {
