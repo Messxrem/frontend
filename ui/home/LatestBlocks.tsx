@@ -89,7 +89,7 @@ const LatestBlocks = () => {
           </AnimatePresence>
         </VStack>
         <Flex justifyContent="center">
-          <LinkInternal fontSize="sm" href={ route({ pathname: '/blocks' }) }>View all blocks</LinkInternal>
+          <LinkInternal fontSize="sm" textColor='#00E8AF' href={ route({ pathname: '/blocks' }) }>View all blocks</LinkInternal>
         </Flex>
       </>
     );
@@ -103,12 +103,12 @@ const LatestBlocks = () => {
           <Text as="span" fontSize="sm">
               Network utilization:{ nbsp }
           </Text>
-          <Text as="span" fontSize="sm" color="green.400" fontWeight={ 700 }>
+          <Text as="span" fontSize="sm" textColor="#00E8AF" fontWeight={ 700 }>
             { statsQueryResult.data?.network_utilization_percentage.toFixed(2) }%
           </Text>
         </Skeleton>
       ) }
-      <Box mt={ 3 }>
+      <Box mt={ 3 } bgColor="rgba(15, 23, 42, 0.34)" backdropFilter="blur(4px)">
         { content }
       </Box>
     </Box>

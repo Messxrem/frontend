@@ -85,7 +85,7 @@ const TxAdditionalInfoContent = ({ tx }: { tx: Transaction }) => {
             <Text>{ BigNumber(tx.gas_used).toFormat() }</Text>
             <TextSeparator/>
             <Text>{ BigNumber(tx.gas_limit).toFormat() }</Text>
-            <Utilization ml={ 4 } value={ Number(BigNumber(tx.gas_used).dividedBy(BigNumber(tx.gas_limit)).toFixed(2)) }/>
+            <Utilization ml={ 4 } color="#00E8AF" value={ Number(BigNumber(tx.gas_used).dividedBy(BigNumber(tx.gas_limit)).toFixed(2)) }/>
           </Flex>
         </Box>
       ) }
@@ -131,7 +131,7 @@ const TxAdditionalInfoContent = ({ tx }: { tx: Transaction }) => {
           </Box>
         </Box>
       ) }
-      <LinkInternal href={ route({ pathname: '/tx/[hash]', query: { hash: tx.hash } }) }>More details</LinkInternal>
+      <LinkInternal textColor="#00E8AF" href={ route({ pathname: '/tx/[hash]', query: { hash: tx.hash } }) }>More details</LinkInternal>
     </>
   );
 };
