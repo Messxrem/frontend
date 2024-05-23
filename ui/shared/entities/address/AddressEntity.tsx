@@ -22,6 +22,7 @@ const Link = chakra((props: LinkProps) => {
     <EntityBase.Link
       { ...props }
       href={ props.href ?? defaultHref }
+      
     >
       { props.children }
     </EntityBase.Link>
@@ -64,7 +65,7 @@ const Icon = (props: IconProps) => {
             <EntityBase.Icon
               { ...props }
               name="contract_verified"
-              color="green.500"
+              color="#00E8AF"
               borderRadius={ 0 }
             />
           </span>
@@ -105,7 +106,7 @@ const Content = chakra((props: ContentProps) => {
 
   if (nameText) {
     const label = (
-      <VStack gap={ 0 } py={ 1 } color="inherit">
+      <VStack gap={ 0 } py={ 1 } color="#00E8AF">
         <Box fontWeight={ 600 } whiteSpace="pre-wrap" wordBreak="break-word">{ nameText }</Box>
         <Box whiteSpace="pre-wrap" wordBreak="break-word">{ props.address.hash }</Box>
       </VStack>
@@ -163,7 +164,7 @@ const AddressEntry = (props: EntityProps) => {
       position="relative"
       textColor="#00E8AF"
     >
-      <Icon { ...partsProps } color={ props.iconColor }/>
+      <Icon { ...partsProps } color="#00E8AF"/>
       <Link { ...linkProps }>
         <Content { ...partsProps }/>
       </Link>

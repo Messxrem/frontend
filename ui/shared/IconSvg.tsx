@@ -15,7 +15,7 @@ interface Props extends HTMLChakraProps<'div'> {
 const IconSvg = ({ name, isLoading, ...props }: Props, ref: React.ForwardedRef<HTMLDivElement>) => {
   return (
     <Skeleton isLoaded={ !isLoading } display="inline-block" { ...props } ref={ ref }>
-      <chakra.svg w="100%" h="100%">
+      <chakra.svg color="#00E8AF" w="100%" h="100%">
         <use href={ `${ href }#${ name }` }/>
       </chakra.svg>
     </Skeleton>

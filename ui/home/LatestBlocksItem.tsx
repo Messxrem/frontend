@@ -42,7 +42,7 @@ const LatestBlocksItem = ({ block, isLoading }: Props) => {
           isLoading={ isLoading }
           number={ block.height }
           tailLength={ 2 }
-          textColor="#00E8AF"
+          color="#00E8AF"
           fontSize="xl"
           lineHeight={ 7 }
           fontWeight={ 500 }

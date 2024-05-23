@@ -86,10 +86,12 @@ const ChainIndicators = () => {
   return (
     <Flex
       p={{ base: 0, lg: 8 }}
-      borderRadius={{ base: 'none', lg: 'lg' }}
       boxShadow={{ base: 'none', lg: 'xl' }}
       backdropFilter="blur(4px)"
       bgColor={{ base: bgColorMobile, lg: bgColorDesktop }}
+      borderRadius="md"
+      border="1px solid"
+      borderColor="divider"
       columnGap={ 6 }
       rowGap={ 0 }
       flexDir={{ base: 'column', lg: 'row' }}
@@ -106,7 +108,7 @@ const ChainIndicators = () => {
           { valueTitle }
           { valueDiff }
         </Box>
-        <ChainIndicatorChartContainer { ...queryResult }/>
+        <ChainIndicatorChartContainer  { ...queryResult }/>
       </Flex>
       { indicators.length > 1 && (
         <Flex

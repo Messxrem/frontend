@@ -34,8 +34,10 @@ const StatsItem = ({ icon, title, value, className, tooltip, url, isLoading }: P
     <Flex
       backgroundColor="rgba(15, 23, 42, 0.34)" 
       backdropFilter="blur(4px)"
-      padding={ 3 }
       borderRadius="md"
+      border="1px solid"
+      borderColor="divider"
+      padding={ 3 }
       flexDirection="row"
       sx={ sxContainer }
       alignItems="center"
