@@ -29,7 +29,7 @@ Type extends EventTypes.PAGE_VIEW ?
   'Page type': string;
   'Tab': string;
   'Page'?: string;
-  'Color mode': 'light' | 'dark';
+  'Color mode': 'dark';
 } :
 Type extends EventTypes.SEARCH_QUERY ? {
   'Search query': string;
