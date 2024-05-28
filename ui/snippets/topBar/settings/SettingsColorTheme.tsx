@@ -20,7 +20,7 @@ const SettingsColorTheme = () => {
 
     setColorMode(nextTheme.colorMode);
 
-    const varName = nextTheme.colorMode === 'light' ? '--chakra-colors-black' : '--chakra-colors-black';
+    const varName = nextTheme.colorMode === 'light' ? '--chakra-colors-white' : '--chakra-colors-black';
     window.document.documentElement.style.setProperty(varName, hex);
 
     cookies.set(cookies.NAMES.COLOR_MODE_HEX, hex);
@@ -32,7 +32,7 @@ const SettingsColorTheme = () => {
 
     const nextColorMode = (() => {
       if (!cookieColorMode) {
-        return 'dark';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
 
       return cookieColorMode;
