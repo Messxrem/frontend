@@ -211,12 +211,12 @@ export default function useNavItems(): ReturnType {
         icon: 'apps',
         isActive: pathname.startsWith('/app'),
       } : null,
-      config.features.stats.isEnabled ? {
-        text: 'Charts & stats',
-        nextRoute: { pathname: '/stats' as const },
-        icon: 'stats',
-        isActive: pathname === '/stats',
-      } : null,
+      // config.features.stats.isEnabled ? {
+      //   text: 'Charts & stats',
+      //   nextRoute: { pathname: '/stats' as const },
+      //   icon: 'stats',
+      //   isActive: pathname === '/stats',
+      // } : null,
       // apiNavItems.length > 0 && {
       //   text: 'API',
       //   icon: 'restAPI',
@@ -232,11 +232,11 @@ export default function useNavItems(): ReturnType {
             nextRoute: { pathname: '/contract-verification' as const },
             isActive: pathname.startsWith('/contract-verification'),
           },
-          config.features.gasTracker.isEnabled && {
-            text: 'Gas tracker',
-            nextRoute: { pathname: '/gas-tracker' as const },
-            isActive: pathname.startsWith('/gas-tracker'),
-          },
+          // config.features.gasTracker.isEnabled && {
+          //   text: 'Gas tracker',
+          //   nextRoute: { pathname: '/gas-tracker' as const },
+          //   isActive: pathname.startsWith('/gas-tracker'),
+          // },
         ].filter(Boolean),
       },
     ].filter(Boolean);
