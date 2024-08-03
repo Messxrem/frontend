@@ -77,7 +77,7 @@ const BlobInfo = ({ data, isLoading }: Props) => {
           <TxEntity hash={ data.transaction_hashes[0].transaction_hash } isLoading={ isLoading } noIcon noCopy={ false }/>
         </DetailsInfoItem>
       ) }
-      <DetailsSponsoredItem isLoading={ isLoading }/>
+      {/* <DetailsSponsoredItem isLoading={ isLoading }/> */}
 
       { data.blob_data && (
         <>

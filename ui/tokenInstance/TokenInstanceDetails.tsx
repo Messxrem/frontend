@@ -116,7 +116,7 @@ const TokenInstanceDetails = ({ data, token, scrollRef, isLoading }: Props) => {
       >
         <TokenInstanceMetadataInfo data={ data } isLoading={ isLoading }/>
         <DetailsInfoItemDivider/>
-        <DetailsSponsoredItem isLoading={ isLoading }/>
+        {/* <DetailsSponsoredItem isLoading={ isLoading }/> */}
       </Grid>
     </>
   );

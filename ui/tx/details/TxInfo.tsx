@@ -288,7 +288,7 @@ const TxInfo = ({ data, isLoading, socketStatus }: Props) => {
       { data.allowed_peekers && data.allowed_peekers.length > 0 && (
         <TxAllowedPeekers items={ data.allowed_peekers }/>
       ) }
-      <DetailsSponsoredItem isLoading={ isLoading }/>
+      {/* <DetailsSponsoredItem isLoading={ isLoading }/> */}
 
       <DetailsInfoItemDivider/>
 

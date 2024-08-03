@@ -46,13 +46,7 @@ const AdbutlerBanner = ({ className }: { className?: string }) => {
     // }
   }, [ router, isMobile ]);
 
-  return (
-    <Flex className={ className } id="adBanner" h={{ base: '100px', lg: '90px' }}>
-      <Script strategy="lazyOnload" id="ad-butler-1">{ connectAdbutler }</Script>
-      <Script strategy="lazyOnload" id="ad-butler-2">{ placeAd }</Script>
-      {/* <div id="ad-banner"></div> */}
-    </Flex>
-  );
+  return;
 };
 
 export default chakra(AdbutlerBanner);
