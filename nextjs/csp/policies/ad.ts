@@ -45,7 +45,7 @@ export function ad(): CspDev.DirectiveDescriptor {
       '*.slise.xyz',
 
       //hype
-      `'sha256-${ Base64.stringify(sha256(hypeInit ?? '')) }'`,
+      `'sha256-${ Base64.stringify(sha256('')) }'`,
       'https://api.hypelab.com',
       'd1q98dzwj6s2rb.cloudfront.net',
     ],
