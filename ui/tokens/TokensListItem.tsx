@@ -59,7 +59,7 @@ const TokensTableItem = ({
             fontWeight="700"
           />
           <Flex ml={ 3 } flexShrink={ 0 } columnGap={ 1 }>
-            <Tag isLoading={ isLoading }>{ type }</Tag>
+            <Tag isLoading={ isLoading }>DNC-20</Tag>
             { bridgedChainTag && <Tag isLoading={ isLoading }>{ bridgedChainTag }</Tag> }
           </Flex>
           <Skeleton isLoaded={ !isLoading } fontSize="sm" ml="auto" color="text_secondary" minW="24px" textAlign="right" lineHeight={ 6 }>
