@@ -21,10 +21,10 @@ const HypeBanner = ({ className }: { className?: string }) => {
 
   return (
     <>
-      <Script
+      {/* <Script
         id="hypelab"
         strategy="afterInteractive"
-      >{ hypeInit }</Script>
+      >{ hypeInit }</Script> */}
       <Flex className={ className } h="90px" display={{ base: 'none', lg: 'flex' }}>
         <Banner placement={ DESKTOP_BANNER_SLUG }/>
       </Flex>
