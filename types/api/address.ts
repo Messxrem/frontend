@@ -46,7 +46,7 @@ export interface AddressTokenBalance {
 
 export type AddressNFT = TokenInstance & {
   token: TokenInfo;
-  token_type: Omit<TokenType, 'ERC-20'>;
+  token_type: Omit<TokenType, 'DNC-20'>;
   value: string;
 }
 

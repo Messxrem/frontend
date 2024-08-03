@@ -197,8 +197,8 @@ const TokenPageContent = () => {
 
   let pagination: PaginationParams | undefined;
 
-  // default tab for erc-20 is token transfers
-  if ((tokenQuery.data?.type === 'ERC-20' && !tab) || tab === 'token_transfers') {
+  // default tab for DNC-20 is token transfers
+  if ((tokenQuery.data?.type === 'DNC-20' && !tab) || tab === 'token_transfers') {
     pagination = transfersQuery.pagination;
   }
 

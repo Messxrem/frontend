@@ -19,7 +19,7 @@ const TokenSelectItem = ({ data }: Props) => {
 
   const secondRow = (() => {
     switch (data.token.type) {
-      case 'ERC-20': {
+      case 'DNC-20': {
         const tokenDecimals = Number(data.token.decimals) || 18;
         const text = `${ BigNumber(data.value).dividedBy(10 ** tokenDecimals).dp(8).toFormat() } ${ data.token.symbol || '' }`;
 
@@ -30,11 +30,11 @@ const TokenSelectItem = ({ data }: Props) => {
           </>
         );
       }
-      case 'ERC-721': {
+      case 'DNC-721': {
         const text = `${ BigNumber(data.value).toFormat() } ${ data.token.symbol || '' }`;
         return <TruncatedValue value={ text }/>;
       }
-      case 'ERC-1155': {
+      case 'DNC-1155': {
         return (
           <>
             <chakra.span textOverflow="ellipsis" overflow="hidden" mr={ 6 }>
@@ -46,7 +46,7 @@ const TokenSelectItem = ({ data }: Props) => {
           </>
         );
       }
-      case 'ERC-404': {
+      case 'DNC-404': {
         return (
           <>
             { data.token_id !== null && (

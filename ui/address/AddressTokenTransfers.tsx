@@ -187,7 +187,7 @@ const AddressTokenTransfers = ({ scrollRef, overloadCount = OVERLOAD_COUNT, shou
     name: '',
     icon_url: '',
     symbol: '',
-    type: 'ERC-20' as const,
+    type: 'DNC-20' as const,
   }), [ tokenFilter ]);
 
   if (!isMounted || !shouldRender) {

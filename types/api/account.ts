@@ -34,9 +34,9 @@ export interface NotificationDirection {
 
 export interface NotificationSettings {
   'native': NotificationDirection;
-  'ERC-20': NotificationDirection;
-  'ERC-721': NotificationDirection;
-  'ERC-404': NotificationDirection;
+  'DNC-20': NotificationDirection;
+  'DNC-721': NotificationDirection;
+  'DNC-404': NotificationDirection;
 }
 
 export interface NotificationMethods {
