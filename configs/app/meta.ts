@@ -7,7 +7,7 @@ const meta = Object.freeze({
   promoteBlockscoutInTitle: 'false',
   og: {
     description: getEnvValue('NEXT_PUBLIC_OG_DESCRIPTION') || '',
-    imageUrl: app.baseUrl + (defaultImageUrl),
+    imageUrl: 'https://explorer.dexnetchain.com/static/og_placeholder.png',
     enhancedDataEnabled: getEnvValue('NEXT_PUBLIC_OG_ENHANCED_DATA_ENABLED') === 'true',
   },
   seo: {
