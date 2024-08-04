@@ -19,7 +19,7 @@ export default function generate<Pathname extends Route['pathname']>(route: Rout
   };
 
   const compiledTitle = compileValue(templates.title.make(route.pathname, Boolean(apiData)), params);
-  const title = compiledTitle ? compiledTitle + (config.meta.promoteBlockscoutInTitle ? '' : '') : '';
+  const title = 'Dexnet chain explorer';
   const description = compileValue(templates.description.make(route.pathname), params);
 
   const pageOgType = getPageOgType(route.pathname);
@@ -29,7 +29,7 @@ export default function generate<Pathname extends Route['pathname']>(route: Rout
     description,
     opengraph: {
       title: title,
-      description: pageOgType !== 'Regular page' ? config.meta.og.description : '',
+      description: '',
       imageUrl: 'https://explorer.dexnetchain.com/static/og_placeholder.png',
     },
   };
