@@ -7,7 +7,6 @@ import config from 'configs/app';
 import getNetworkTitle from 'lib/networks/getNetworkTitle';
 
 import compileValue from './compileValue';
-import getPageOgType from './getPageOgType';
 import * as templates from './templates';
 
 export default function generate<Pathname extends Route['pathname']>(route: RouteParams<Pathname>, apiData: ApiData<Pathname> = null): Metadata {
@@ -18,11 +17,8 @@ export default function generate<Pathname extends Route['pathname']>(route: Rout
     network_title: getNetworkTitle(),
   };
 
-  const compiledTitle = compileValue(templates.title.make(route.pathname, Boolean(apiData)), params);
   const title = 'Dexnet chain explorer';
   const description = compileValue(templates.description.make(route.pathname), params);
-
-  const pageOgType = getPageOgType(route.pathname);
 
   return {
     title: title,
