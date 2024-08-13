@@ -137,7 +137,7 @@ const Stats = () => {
           _last={ isOdd ? lastItemTouchStyle : undefined }
           isLoading={ isLoading }
         />
-        { hasGasTracker && data.gas_prices && (
+        { false && (
           <StatsItem
             icon="gas"
             title="Gas tracker"
