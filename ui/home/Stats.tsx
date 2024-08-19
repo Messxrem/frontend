@@ -137,7 +137,7 @@ const Stats = () => {
           _last={ isOdd ? lastItemTouchStyle : undefined }
           isLoading={ isLoading }
         />
-        { false && (
+        { (
           <StatsItem
             icon="rocket"
             title="Transactions per second"
