@@ -139,11 +139,10 @@ const Stats = () => {
         />
         { false && (
           <StatsItem
-            icon="gas"
-            title="Gas tracker"
-            value={ <GasPrice data={ data.gas_prices.average }/> }
+            icon="rocket"
+            title="Transactions per second"
+            value={ 1270 }
             _last={ isOdd ? lastItemTouchStyle : undefined }
-            tooltip={ gasInfoTooltip }
             isLoading={ isLoading }
           />
         ) }
