@@ -34,9 +34,9 @@ export interface NotificationDirection {
 
 export interface NotificationSettings {
   'native': NotificationDirection;
-  'DNC-20': NotificationDirection;
-  'DNC-721': NotificationDirection;
-  'DNC-404': NotificationDirection;
+  'DEX-20': NotificationDirection;
+  'DEX-721': NotificationDirection;
+  'DEX-404': NotificationDirection;
 }
 
 export interface NotificationMethods {

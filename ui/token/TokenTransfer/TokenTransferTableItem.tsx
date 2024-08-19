@@ -83,7 +83,7 @@ const TokenTransferTableItem = ({
           }
         </Td>
       ) }
-      { (token.type === 'DNC-20' || token.type === 'DNC-1155' || token.type === 'DNC-404') && (
+      { (token.type === 'DEX-20' || token.type === 'DEX-1155' || token.type === 'DEX-404') && (
         <Td isNumeric verticalAlign="top">
           { valueStr && (
             <Skeleton isLoaded={ !isLoading } display="inline-block" mt="7px" wordBreak="break-all">

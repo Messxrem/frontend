@@ -46,19 +46,19 @@ const test = base.extend({
       status: 200,
       body: JSON.stringify(addressMock.withName),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-20', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-20', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response20),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-721', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-721', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response721),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-1155', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-1155', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response1155),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-404', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-404', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response404),
     }));
@@ -234,19 +234,19 @@ base.describe('update balances via socket', () => {
       status: 200,
       body: JSON.stringify(addressMock.validator),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-20', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-20', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response20),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-721', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-721', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response721),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-1155', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-1155', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response1155),
     }));
-    await page.route(API_URL_TOKENS + '?type=DNC-404', (route) => route.fulfill({
+    await page.route(API_URL_TOKENS + '?type=DEX-404', (route) => route.fulfill({
       status: 200,
       body: JSON.stringify(response404),
     }));
@@ -261,10 +261,10 @@ base.describe('update balances via socket', () => {
       { hooksConfig },
     );
 
-    await page.waitForResponse(API_URL_TOKENS + '?type=DNC-20');
-    await page.waitForResponse(API_URL_TOKENS + '?type=DNC-721');
-    await page.waitForResponse(API_URL_TOKENS + '?type=DNC-1155');
-    await page.waitForResponse(API_URL_TOKENS + '?type=DNC-404');
+    await page.waitForResponse(API_URL_TOKENS + '?type=DEX-20');
+    await page.waitForResponse(API_URL_TOKENS + '?type=DEX-721');
+    await page.waitForResponse(API_URL_TOKENS + '?type=DEX-1155');
+    await page.waitForResponse(API_URL_TOKENS + '?type=DEX-404');
 
     await expect(component).toHaveScreenshot();
 

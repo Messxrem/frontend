@@ -23,22 +23,22 @@ const tokenBalanceItemIdentityFactory = (match: AddressTokenBalance) => (item: A
 export default function useFetchTokens({ hash }: Props) {
   const erc20query = useApiQuery('address_tokens', {
     pathParams: { hash },
-    queryParams: { type: 'DNC-20' },
+    queryParams: { type: 'DEX-20' },
     queryOptions: { enabled: Boolean(hash), refetchOnMount: false },
   });
   const erc721query = useApiQuery('address_tokens', {
     pathParams: { hash },
-    queryParams: { type: 'DNC-721' },
+    queryParams: { type: 'DEX-721' },
     queryOptions: { enabled: Boolean(hash), refetchOnMount: false },
   });
   const erc1155query = useApiQuery('address_tokens', {
     pathParams: { hash },
-    queryParams: { type: 'DNC-1155' },
+    queryParams: { type: 'DEX-1155' },
     queryOptions: { enabled: Boolean(hash), refetchOnMount: false },
   });
   const erc404query = useApiQuery('address_tokens', {
     pathParams: { hash },
-    queryParams: { type: 'DNC-404' },
+    queryParams: { type: 'DEX-404' },
     queryOptions: { enabled: Boolean(hash), refetchOnMount: false },
   });
 
@@ -72,19 +72,19 @@ export default function useFetchTokens({ hash }: Props) {
   }, [ hash, queryClient ]);
 
   const handleTokenBalancesErc20Message: SocketMessage.AddressTokenBalancesErc20['handler'] = React.useCallback((payload) => {
-    updateTokensData('DNC-20', payload);
+    updateTokensData('DEX-20', payload);
   }, [ updateTokensData ]);
 
   const handleTokenBalancesErc721Message: SocketMessage.AddressTokenBalancesErc721['handler'] = React.useCallback((payload) => {
-    updateTokensData('DNC-721', payload);
+    updateTokensData('DEX-721', payload);
   }, [ updateTokensData ]);
 
   const handleTokenBalancesErc1155Message: SocketMessage.AddressTokenBalancesErc1155['handler'] = React.useCallback((payload) => {
-    updateTokensData('DNC-1155', payload);
+    updateTokensData('DEX-1155', payload);
   }, [ updateTokensData ]);
 
   const handleTokenBalancesErc404Message: SocketMessage.AddressTokenBalancesErc1155['handler'] = React.useCallback((payload) => {
-    updateTokensData('DNC-404', payload);
+    updateTokensData('DEX-404', payload);
   }, [ updateTokensData ]);
 
   const channel = useSocketChannel({
@@ -115,19 +115,19 @@ export default function useFetchTokens({ hash }: Props) {
 
   const data = React.useMemo(() => {
     return {
-      'DNC-20': {
+      'DEX-20': {
         items: erc20query.data?.items.map(calculateUsdValue) || [],
         isOverflow: Boolean(erc20query.data?.next_page_params),
       },
-      'DNC-721': {
+      'DEX-721': {
         items: erc721query.data?.items.map(calculateUsdValue) || [],
         isOverflow: Boolean(erc721query.data?.next_page_params),
       },
-      'DNC-1155': {
+      'DEX-1155': {
         items: erc1155query.data?.items.map(calculateUsdValue) || [],
         isOverflow: Boolean(erc1155query.data?.next_page_params),
       },
-      'DNC-404': {
+      'DEX-404': {
         items: erc404query.data?.items.map(calculateUsdValue) || [],
         isOverflow: Boolean(erc1155query.data?.next_page_params),
       },

@@ -26,19 +26,19 @@ export type Erc404TotalPayload = {
 
 export type TokenTransfer = (
   {
-    token: TokenInfo<'DNC-20'>;
+    token: TokenInfo<'DEX-20'>;
     total: Erc20TotalPayload;
   } |
   {
-    token: TokenInfo<'DNC-721'>;
+    token: TokenInfo<'DEX-721'>;
     total: Erc721TotalPayload;
   } |
   {
-    token: TokenInfo<'DNC-1155'>;
+    token: TokenInfo<'DEX-1155'>;
     total: Erc1155TotalPayload;
   } |
   {
-    token: TokenInfo<'DNC-404'>;
+    token: TokenInfo<'DEX-404'>;
     total: Erc404TotalPayload;
   }
 ) & TokenTransferBase

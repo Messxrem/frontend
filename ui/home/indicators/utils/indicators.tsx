@@ -45,7 +45,7 @@ const nativeTokenData = {
   icon_url: '',
   symbol: '',
   address: '',
-  type: 'DNC-20' as const,
+  type: 'DEX-20' as const,
 };
 
 const coinPriceIndicator: TChainIndicator<'stats_charts_market'> = {

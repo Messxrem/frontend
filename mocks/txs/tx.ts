@@ -303,7 +303,7 @@ export const stabilityTx: Transaction = {
       name: 'Stability Gas',
       symbol: 'GAS',
       total_supply: '10000000000000000000000000',
-      type: 'DNC-20',
+      type: 'DEX-20',
     },
     total_fee: '68762500000000',
     validator_address: {

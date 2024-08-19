@@ -19,7 +19,7 @@ const TokenSelectItem = ({ data }: Props) => {
 
   const secondRow = (() => {
     switch (data.token.type) {
-      case 'DNC-20': {
+      case 'DEX-20': {
         const tokenDecimals = Number(data.token.decimals) || 18;
         const text = `${ BigNumber(data.value).dividedBy(10 ** tokenDecimals).dp(8).toFormat() } ${ data.token.symbol || '' }`;
 
@@ -30,11 +30,11 @@ const TokenSelectItem = ({ data }: Props) => {
           </>
         );
       }
-      case 'DNC-721': {
+      case 'DEX-721': {
         const text = `${ BigNumber(data.value).toFormat() } ${ data.token.symbol || '' }`;
         return <TruncatedValue value={ text }/>;
       }
-      case 'DNC-1155': {
+      case 'DEX-1155': {
         return (
           <>
             <chakra.span textOverflow="ellipsis" overflow="hidden" mr={ 6 }>
@@ -46,7 +46,7 @@ const TokenSelectItem = ({ data }: Props) => {
           </>
         );
       }
-      case 'DNC-404': {
+      case 'DEX-404': {
         return (
           <>
             { data.token_id !== null && (

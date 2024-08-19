@@ -22,12 +22,12 @@ const TxDetailsTokenTransfer = ({ data }: Props) => {
 
   const content = (() => {
     switch (data.token.type) {
-      case 'DNC-20': {
+      case 'DEX-20': {
         const total = data.total as Erc20TotalPayload;
         return <FtTokenTransferSnippet token={ data.token } value={ total.value } decimals={ total.decimals }/>;
       }
 
-      case 'DNC-721': {
+      case 'DEX-721': {
         const total = data.total as Erc721TotalPayload;
         return (
           <NftTokenTransferSnippet
@@ -38,7 +38,7 @@ const TxDetailsTokenTransfer = ({ data }: Props) => {
         );
       }
 
-      case 'DNC-1155': {
+      case 'DEX-1155': {
         const total = data.total as Erc1155TotalPayload;
         return (
           <NftTokenTransferSnippet
@@ -50,7 +50,7 @@ const TxDetailsTokenTransfer = ({ data }: Props) => {
         );
       }
 
-      case 'DNC-404': {
+      case 'DEX-404': {
         const total = data.total as Erc404TotalPayload;
 
         if (total.token_id !== null) {

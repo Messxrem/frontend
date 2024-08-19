@@ -29,7 +29,7 @@ const TokenHoldersListItem = ({ holder, token, isLoading }: Props) => {
         />
       </ListItemMobileGrid.Value>
 
-      { (token.type === 'DNC-1155' || token.type === 'DNC-404') && 'token_id' in holder && (
+      { (token.type === 'DEX-1155' || token.type === 'DEX-404') && 'token_id' in holder && (
         <>
           <ListItemMobileGrid.Label isLoading={ isLoading }>ID#</ListItemMobileGrid.Label>
           <ListItemMobileGrid.Value>
@@ -47,7 +47,7 @@ const TokenHoldersListItem = ({ holder, token, isLoading }: Props) => {
         </Skeleton>
       </ListItemMobileGrid.Value>
 
-      { token.total_supply && token.type !== 'DNC-404' && (
+      { token.total_supply && token.type !== 'DEX-404' && (
         <>
           <ListItemMobileGrid.Label isLoading={ isLoading }>Percentage</ListItemMobileGrid.Label>
           <ListItemMobileGrid.Value>

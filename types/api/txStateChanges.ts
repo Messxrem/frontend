@@ -21,13 +21,13 @@ type ChangeDirection = 'from' | 'to';
 
 export interface TxStateChangeTokenErc20 {
   type: 'token';
-  token: TokenInfo<'DNC-20'>;
+  token: TokenInfo<'DEX-20'>;
   change: string;
 }
 
 export interface TxStateChangeTokenErc721 {
   type: 'token';
-  token: TokenInfo<'DNC-721'>;
+  token: TokenInfo<'DEX-721'>;
   change: Array<{
     direction: ChangeDirection;
     total: Erc721TotalPayload;
@@ -36,14 +36,14 @@ export interface TxStateChangeTokenErc721 {
 
 export interface TxStateChangeTokenErc1155 {
   type: 'token';
-  token: TokenInfo<'DNC-1155'>;
+  token: TokenInfo<'DEX-1155'>;
   change: string;
   token_id: string;
 }
 
 export interface TxStateChangeTokenErc404 {
   type: 'token';
-  token: TokenInfo<'DNC-404'>;
+  token: TokenInfo<'DEX-404'>;
   change: string;
   token_id: string;
 }

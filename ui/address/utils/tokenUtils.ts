@@ -22,7 +22,7 @@ export interface TokenSelectDataItem {
 
 type TokenGroup = [string, TokenSelectDataItem];
 
-const TOKEN_GROUPS_ORDER: Array<TokenType> = [ 'DNC-20', 'DNC-721', 'DNC-1155', 'DNC-404' ];
+const TOKEN_GROUPS_ORDER: Array<TokenType> = [ 'DEX-20', 'DEX-721', 'DEX-1155', 'DEX-404' ];
 
 export const sortTokenGroups = (groupA: TokenGroup, groupB: TokenGroup) => {
   return TOKEN_GROUPS_ORDER.indexOf(groupA[0] as TokenType) > TOKEN_GROUPS_ORDER.indexOf(groupB[0] as TokenType) ? 1 : -1;
@@ -62,10 +62,10 @@ const sortErc20Tokens = (sort: Sort) => (dataA: TokenEnhancedData, dataB: TokenE
 const sortErc721Tokens = () => () => 0;
 
 export const sortingFns = {
-  'DNC-20': sortErc20Tokens,
-  'DNC-721': sortErc721Tokens,
-  'DNC-1155': sortErc1155or404Tokens,
-  'DNC-404': sortErc1155or404Tokens,
+  'DEX-20': sortErc20Tokens,
+  'DEX-721': sortErc721Tokens,
+  'DEX-1155': sortErc1155or404Tokens,
+  'DEX-404': sortErc1155or404Tokens,
 };
 
 export const filterTokens = (searchTerm: string) => ({ token }: AddressTokenBalance) => {
@@ -77,7 +77,7 @@ export const filterTokens = (searchTerm: string) => ({ token }: AddressTokenBala
 };
 
 export const calculateUsdValue = (data: AddressTokenBalance): TokenEnhancedData => {
-  if (data.token.type !== 'DNC-20') {
+  if (data.token.type !== 'DEX-20') {
     return data;
   }
 

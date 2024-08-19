@@ -49,25 +49,25 @@ const TokenSelectMenu = ({ erc20sort, erc1155sort, erc404sort, filteredData, onI
 
           const type = tokenType as TokenType;
           const arrowTransform =
-            (type === 'DNC-1155' && erc1155sort === 'desc') ||
-            (type === 'DNC-404' && erc404sort === 'desc') ||
-            (type === 'DNC-20' && erc20sort === 'desc') ?
+            (type === 'DEX-1155' && erc1155sort === 'desc') ||
+            (type === 'DEX-404' && erc404sort === 'desc') ||
+            (type === 'DEX-20' && erc20sort === 'desc') ?
               'rotate(90deg)' :
               'rotate(-90deg)';
           const sortDirection: Sort = (() => {
             switch (type) {
-              case 'DNC-1155':
+              case 'DEX-1155':
                 return erc1155sort;
-              case 'DNC-20':
+              case 'DEX-20':
                 return erc20sort;
               default:
                 return 'desc';
             }
           })();
           const hasSort =
-            (type === 'DNC-404' && tokenInfo.items.some(item => item.value)) ||
-            type === 'DNC-1155' ||
-            (type === 'DNC-20' && tokenInfo.items.some(({ usd }) => usd));
+            (type === 'DEX-404' && tokenInfo.items.some(item => item.value)) ||
+            type === 'DEX-1155' ||
+            (type === 'DEX-20' && tokenInfo.items.some(({ usd }) => usd));
           const numPrefix = tokenInfo.isOverflow ? '>' : '';
 
           return (

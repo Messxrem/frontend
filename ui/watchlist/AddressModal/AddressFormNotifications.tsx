@@ -7,8 +7,8 @@ import config from 'configs/app';
 import CheckboxInput from 'ui/shared/CheckboxInput';
 
 // does it depend on the network?
-const NOTIFICATIONS = [ 'native', 'DNC-20', 'DNC-721', 'DNC-404' ] as const;
-const NOTIFICATIONS_NAMES = [ config.chain.currency.symbol, 'DNC-20', 'DNC-721, DNC-1155 (NFT)', 'DNC-404' ];
+const NOTIFICATIONS = [ 'native', 'DEX-20', 'DEX-721', 'DEX-404' ] as const;
+const NOTIFICATIONS_NAMES = [ config.chain.currency.symbol, 'DEX-20', 'DEX-721, DEX-1155 (NFT)', 'DEX-404' ];
 
 type Props<Inputs extends FieldValues> = {
   control: Control<Inputs>;

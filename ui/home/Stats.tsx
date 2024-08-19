@@ -137,7 +137,7 @@ const Stats = () => {
           _last={ isOdd ? lastItemTouchStyle : undefined }
           isLoading={ isLoading }
         />
-        {/* { false && (
+        { false && (
           <StatsItem
             icon="gas"
             title="Gas tracker"
@@ -146,7 +146,7 @@ const Stats = () => {
             tooltip={ gasInfoTooltip }
             isLoading={ isLoading }
           />
-        ) } */}
+        ) }
         { data.rootstock_locked_btc && (
           <StatsItem
             icon="coins/bitcoin"

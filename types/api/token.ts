@@ -1,8 +1,8 @@
 import type { TokenInfoApplication } from './account';
 import type { AddressParam } from './addressParams';
 
-export type NFTTokenType = 'DNC-721' | 'DNC-1155' | 'DNC-404';
-export type TokenType = 'DNC-20' | NFTTokenType;
+export type NFTTokenType = 'DEX-721' | 'DEX-1155' | 'DEX-404';
+export type TokenType = 'DEX-20' | NFTTokenType;
 
 export interface TokenInfo<T extends TokenType = TokenType> {
   address: string;

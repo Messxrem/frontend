@@ -40,15 +40,15 @@ export const WATCH_LIST_ITEM_WITH_TOKEN_INFO: WatchlistAddress = {
     email: false,
   },
   notification_settings: {
-    'DNC-20': {
+    'DEX-20': {
       incoming: true,
       outcoming: true,
     },
-    'DNC-721': {
+    'DEX-721': {
       incoming: true,
       outcoming: true,
     },
-    'DNC-404': {
+    'DEX-404': {
       incoming: true,
       outcoming: true,
     },
